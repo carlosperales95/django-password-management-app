@@ -64,9 +64,9 @@ PROJECT DESCRIPTION
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![Python][Python]][Python-url]
-* [![Django][Django]][Django-url]
-* [![SQLite][SQLite]][SQLite-url]
+[![Python][Python]][Python-url]
+[![Django][Django]][Django-url]
+[![SQLite][SQLite]][SQLite-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -87,7 +87,8 @@ Make sure that the following requirements are satified before starting with the 
 ### Installation
 
 > [!CAUTION]  
-> _The below might vary depending on the specific OS you are using. Please note that the pre-existing scripts are only valid for Unix based OS (e.g. Linux, Mac)_
+> _The below might vary depending on the specific OS you are using.
+> Please note that the pre-existing scripts are only valid for Unix based OS (e.g. Linux, Mac)_
 
 
 1. Clone the repo
