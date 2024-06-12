@@ -99,6 +99,8 @@ ipython_config.py
 #   install all needed dependencies.
 Pipfile.lock
 Pipfile
+pipfile
+pipfile.lock
 
 # poetry
 #poetry.lock
