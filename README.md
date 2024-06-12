@@ -165,13 +165,14 @@ Make sure that the following requirements are satified before starting with the 
    ```
 </details>
 
+Now the server should be up and running, and visible at ![localhost](http://127.0.0.1:8000) !
+<br />
+
 > [!IMPORTANT]  
 > When the application will no longer be in use (`Ctrl/Cmd + C`), always remember to deactivate the virtual environment:
 >   ```sh
 >    deactivate
 >   ```
-
-Now the server should be up and running, and visible at ![localhost](http://127.0.0.1:8000) !
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br />
@@ -179,12 +180,10 @@ Now the server should be up and running, and visible at ![localhost](http://127.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-
 ![image](https://github.com/carlosperales95/django-password-management-app/assets/8956411/7797f63a-2603-4bca-bb42-a5fa31cf86c5)
 ![](https://github.com/carlosperales95/django-password-management-app/assets/8956411/e65d5673-0d24-470e-b062-82fcb0650481)
 ![image](https://github.com/carlosperales95/django-password-management-app/assets/8956411/2a2d8ee6-57b8-4a91-aa04-74cd5213df2f)
 ![image](https://github.com/carlosperales95/django-password-management-app/assets/8956411/2280b08e-82b1-49f4-9219-ad1590e967c8)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
