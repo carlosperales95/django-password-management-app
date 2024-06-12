@@ -45,14 +45,12 @@
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
-
+<br />
 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 ![photo-collage png](https://github.com/carlosperales95/django-password-management-app/assets/8956411/e7302035-9ec7-4332-85b2-753c8e03584a)
-
-
 
 
 PROJECT DESCRIPTION
@@ -83,6 +81,7 @@ Make sure that the following requirements are satified before starting with the 
 * python3
 * pip
 
+<br />
 ### Installation
 
 > [!CAUTION]  
@@ -152,7 +151,7 @@ Now the server should be up and running, and visible at ![localhost](http://127.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
+<br />
 <!-- USAGE EXAMPLES -->
 ## Usage
 
