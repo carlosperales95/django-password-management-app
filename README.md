@@ -135,7 +135,7 @@ Make sure that the following requirements are satified before starting with the 
 > Please follow the steps for the way you prefer.
 
 <details> 
- <summary><h2>Scripted way</h2></summary>
+ <summary><h2>Scripted Setup</h2></summary>
  
 1. Give permissions to the script files
    ```sh
@@ -155,7 +155,7 @@ Make sure that the following requirements are satified before starting with the 
 
 
 <details> 
- <summary><h2>Manual way</h2></summary>
+ <summary><h2>Manual Setup</h2></summary>
  
 1. Create virtual environment and `pip` install requirements
    ```sh
