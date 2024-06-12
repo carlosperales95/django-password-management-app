@@ -113,11 +113,11 @@ Make sure that the following requirements are satified before starting with the 
    
 <br />
 
-   `SECRET_KEY` is your personal Django key, which you can generate using your console (if you are tech savvy), or simply in a site like [Djecrety](Djcrety-url)
+&nbsp;&nbsp;&nbsp;&nbsp;`SECRET_KEY` is your personal Django key, which you can generate using your console (if you are tech savvy), or simply in a site like [Djecrety](Djcrety-url)
 
 <br />
 
-   `ENCRYPT_KEY` is your personal Fernet encryption key, which you can generate using your console (if you are tech savvy), or simply in a site like [Fernet Key Generator](Fernet-keygen-url)
+&nbsp;&nbsp;&nbsp;&nbsp;`ENCRYPT_KEY` is your personal Fernet encryption key, which you can generate using your console (if you are tech savvy), or simply in a site like [Fernet Key Generator](Fernet-keygen-url)
   ```
   SECRET_KEY = <YOUR_SECRET_KEY_VALUE>
   ENCRYPT_KEY = <YOUR_SECRET_KEY_VALUE>
