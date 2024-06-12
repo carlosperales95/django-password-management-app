@@ -27,12 +27,8 @@
   <summary>Table of Contents</summary>
   <br />
   <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
+    <li><a href="#built-with">Built With</a></li>
+    <li><a href="#about-the-project">About The Project</a></li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -42,10 +38,18 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 <br />
+
+
+## Built With
+
+[![Python][Python]][Python-url]
+[![Django][Django]][Django-url]
+[![SQLite][SQLite]][SQLite-url]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- ABOUT THE PROJECT -->
@@ -72,16 +76,6 @@ This Password Manager is a secure and efficient application built using Python a
   * **Control and Privacy:** You have full control over your password data, with no dependency on third-party services.
   * **Convenience:** Simplifies the process of generating and storing complex passwords, making it easier to maintain strong security practices.
     
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-### Built With
-
-[![Python][Python]][Python-url]
-[![Django][Django]][Django-url]
-[![SQLite][SQLite]][SQLite-url]
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
