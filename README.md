@@ -1,30 +1,23 @@
 # Django-password-manager-with-authentication
 
-## title {.tabset .tabset-fade}
-content above tabbed region.
+=== "C"
 
-### tab Social-Media
+    ``` c
+    #include <stdio.h>
 
-tab content Social-Media
+    int main(void) {
+      printf("Hello world!\n");
+      return 0;
+    }
+    ```
 
-### tab Contact
+=== "C++"
 
-tab content  Contact
+    ``` c++
+    #include <iostream>
 
-### tab Revisions
-
-tab content  Revisions
-
-### tab Articles
-
-tab content  Articles
-
-### tab Skills
-
-tab content  Skills
-
-### tab Insights
-
-tab content  Insights
-
-content below tabbed region
+    int main(void) {
+      std::cout << "Hello world!" << std::endl;
+      return 0;
+    }
+    ```
