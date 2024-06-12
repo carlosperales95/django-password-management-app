@@ -51,9 +51,8 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+![photo-collage png](https://github.com/carlosperales95/django-password-management-app/assets/8956411/e7302035-9ec7-4332-85b2-753c8e03584a)
 
-![](https://github.com/carlosperales95/django-password-management-app/assets/8956411/e65d5673-0d24-470e-b062-82fcb0650481)
-![image](https://github.com/carlosperales95/django-password-management-app/assets/8956411/2280b08e-82b1-49f4-9219-ad1590e967c8)
 
 
 
@@ -161,6 +160,11 @@ Now the server should be up and running, and visible at ![localhost](http://127.
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
+
+
+
+![](https://github.com/carlosperales95/django-password-management-app/assets/8956411/e65d5673-0d24-470e-b062-82fcb0650481)
+![image](https://github.com/carlosperales95/django-password-management-app/assets/8956411/2280b08e-82b1-49f4-9219-ad1590e967c8)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
