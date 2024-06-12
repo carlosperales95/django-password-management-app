@@ -19,6 +19,7 @@ from django.db import transaction
 
 from .models import credential
 from .forms import PositionForm, CredentialForm
+from .options import types
 
 from cryptography.fernet import Fernet
 from django.utils import timezone
@@ -69,34 +70,7 @@ class credentialList(LoginRequiredMixin, ListView):
 
         context['search_input'] = search_input
 
-        context['types'] = {
-            'adobe': 'imgs/icons/adobe.ico',
-            'amazon': 'imgs/icons/amazon.ico',
-            'bitbucket': 'imgs/icons/bitbucket.ico',
-            'discord': 'imgs/icons/discord.ico',
-            'drive': 'imgs/icons/drive.ico',
-            'dropbox': 'imgs/icons/dropbox.ico',
-            'facebook': 'imgs/icons/facebook.ico',
-            'filezilla': 'imgs/icons/filezilla.ico',
-            'gitlab': 'imgs/icons/gitlab.ico',
-            'github': 'imgs/icons/github.ico',
-            'gmail': 'imgs/icons/gmail.ico',
-            'google': 'imgs/icons/google.ico',
-            'hackerrank': 'imgs/icons/hackerrank.ico',
-            'instagram': 'imgs/icons/instagram.ico',
-            'mega': 'imgs/icons/mega.ico',
-            'netflix': 'imgs/icons/netflix.ico',
-            'netlify': 'imgs/icons/netlify.ico',
-            'outlook': 'imgs/icons/outlook.ico',
-            'postman': 'imgs/icons/postman.ico',
-            'soundcloud': 'imgs/icons/soundcloud.ico',
-            'spotify': 'imgs/icons/spotify.ico',
-            'steam': 'imgs/icons/steam.ico',
-            'telegram': 'imgs/icons/telegram.ico',
-            'twitch': 'imgs/icons/twitch.ico',
-            'youtube': 'imgs/icons/youtube.ico',
-            'other': 'imgs/icons/other.ico'
-        }
+        context['types'] = types
 
         return context
 
@@ -115,35 +89,7 @@ class CredentialCreate(LoginRequiredMixin, CreateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['types'] = {
-            'adobe': 'imgs/icons/adobe.ico',
-            'amazon': 'imgs/icons/amazon.ico',
-            'bitbucket': 'imgs/icons/bitbucket.ico',
-            'discord': 'imgs/icons/discord.ico',
-            'drive': 'imgs/icons/drive.ico',
-            'dropbox': 'imgs/icons/dropbox.ico',
-            'facebook': 'imgs/icons/facebook.ico',
-            'filezilla': 'imgs/icons/filezilla.ico',
-            'gitlab': 'imgs/icons/gitlab.ico',
-            'github': 'imgs/icons/github.ico',
-            'gmail': 'imgs/icons/gmail.ico',
-            'google': 'imgs/icons/google.ico',
-            'hackerrank': 'imgs/icons/hackerrank.ico',
-            'instagram': 'imgs/icons/instagram.ico',
-            'mega': 'imgs/icons/mega.ico',
-            'netflix': 'imgs/icons/netflix.ico',
-            'netlify': 'imgs/icons/netlify.ico',
-            'outlook': 'imgs/icons/outlook.ico',
-            'postman': 'imgs/icons/postman.ico',
-            'soundcloud': 'imgs/icons/soundcloud.ico',
-            'spotify': 'imgs/icons/spotify.ico',
-            'steam': 'imgs/icons/steam.ico',
-            'telegram': 'imgs/icons/telegram.ico',
-            'twitch': 'imgs/icons/twitch.ico',
-            'youtube': 'imgs/icons/youtube.ico',
-            'other': 'imgs/icons/other.ico'
-        }
-        
+        context['types'] = types
         return context
 
 
@@ -167,34 +113,7 @@ class CredentialUpdate(LoginRequiredMixin, UpdateView):
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['types'] = {
-            'adobe': 'imgs/icons/adobe.ico',
-            'amazon': 'imgs/icons/amazon.ico',
-            'bitbucket': 'imgs/icons/bitbucket.ico',
-            'discord': 'imgs/icons/discord.ico',
-            'drive': 'imgs/icons/drive.ico',
-            'dropbox': 'imgs/icons/dropbox.ico',
-            'facebook': 'imgs/icons/facebook.ico',
-            'filezilla': 'imgs/icons/filezilla.ico',
-            'gitlab': 'imgs/icons/gitlab.ico',
-            'github': 'imgs/icons/github.ico',
-            'gmail': 'imgs/icons/gmail.ico',
-            'google': 'imgs/icons/google.ico',
-            'hackerrank': 'imgs/icons/hackerrank.ico',
-            'instagram': 'imgs/icons/instagram.ico',
-            'mega': 'imgs/icons/mega.ico',
-            'netflix': 'imgs/icons/netflix.ico',
-            'netlify': 'imgs/icons/netlify.ico',
-            'outlook': 'imgs/icons/outlook.ico',
-            'postman': 'imgs/icons/postman.ico',
-            'soundcloud': 'imgs/icons/soundcloud.ico',
-            'spotify': 'imgs/icons/spotify.ico',
-            'steam': 'imgs/icons/steam.ico',
-            'telegram': 'imgs/icons/telegram.ico',
-            'twitch': 'imgs/icons/twitch.ico',
-            'youtube': 'imgs/icons/youtube.ico',
-            'other': 'imgs/icons/other.ico'
-        }
+        context['types'] = types
         
         return context
 
