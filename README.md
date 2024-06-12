@@ -53,6 +53,8 @@
 ## About The Project
 
 ![](https://github.com/carlosperales95/django-password-management-app/assets/8956411/e65d5673-0d24-470e-b062-82fcb0650481)
+![image](https://github.com/carlosperales95/django-password-management-app/assets/8956411/2280b08e-82b1-49f4-9219-ad1590e967c8)
+
 
 
 PROJECT DESCRIPTION
