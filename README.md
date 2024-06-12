@@ -52,7 +52,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![App Screen Shot][product-screenshot]](https://github.com/carlosperales95/django-password-management-app/assets/8956411/e65d5673-0d24-470e-b062-82fcb0650481)
+![](https://github.com/carlosperales95/django-password-management-app/assets/8956411/e65d5673-0d24-470e-b062-82fcb0650481)
 
 
 PROJECT DESCRIPTION
