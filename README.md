@@ -103,7 +103,7 @@ Make sure that the following requirements are satified before starting with the 
    git clone https://github.com/carlosperales95/django-password-management-app.git
    ```
 2. Move into the project folder
-   ``sh
+   ```sh
    cd django-password-management-app/
    ```
 3. Set your environment variables:
