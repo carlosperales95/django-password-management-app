@@ -42,10 +42,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
@@ -101,7 +98,9 @@ _The below might vary depending on the specific OS you are using. Please note th
    ```
 3. Set your environment variables
 
-All steps are quite simple until this point. Depending on your lazyness (and trust), there is a scripted way and a manual way to proceed from this point on. Please follow the steps for the way you prefer.
+> [!CAUTION]  
+> All steps are quite simple until this point. Depending on your lazyness (and trust), there is a scripted way and a manual way to proceed from this point on.
+> Please follow the steps for the way you prefer.
 
 <details> 
  <summary><h2>Scripted way</h2></summary>
