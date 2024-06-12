@@ -114,7 +114,7 @@ Evrything is quite simple until this point. Depending on your lazyness (and trus
 <details> 
  <summary><h2>Scripted way</h2></summary>
  
- 1. Give permissions to the script files
+1. Give permissions to the script files
    ```sh
    chmod +x setup.sh
    chmod +x start.sh
