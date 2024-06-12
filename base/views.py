@@ -1,9 +1,10 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView, FormView
 from django.urls import reverse_lazy
 
+from django.http import HttpResponseRedirect
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import UserCreationForm
@@ -17,14 +18,13 @@ from django.shortcuts import redirect
 from django.db import transaction
 
 from .models import credential
-from .forms import PositionForm
+from .forms import PositionForm, CredentialForm
 
 from cryptography.fernet import Fernet
-from django_password_eye.fields import PasswordEye
-
+from django.utils import timezone
 import base64
 
-
+# Login/Register Views
 class CustomLoginView(LoginView):
     template_name = 'base/login.html'
     fields = '__all__'
@@ -52,6 +52,7 @@ class RegisterPage(FormView):
         return super(RegisterPage, self).get(*args, **kwargs)
 
 
+# Credential Based Views
 class credentialList(LoginRequiredMixin, ListView):
     model = credential
     context_object_name = 'credentials'
@@ -68,21 +69,83 @@ class credentialList(LoginRequiredMixin, ListView):
 
         context['search_input'] = search_input
 
+        context['types'] = {
+            'adobe': 'imgs/icons/adobe.ico',
+            'amazon': 'imgs/icons/amazon.ico',
+            'bitbucket': 'imgs/icons/bitbucket.ico',
+            'discord': 'imgs/icons/discord.ico',
+            'drive': 'imgs/icons/drive.ico',
+            'dropbox': 'imgs/icons/dropbox.ico',
+            'facebook': 'imgs/icons/facebook.ico',
+            'filezilla': 'imgs/icons/filezilla.ico',
+            'gitlab': 'imgs/icons/gitlab.ico',
+            'github': 'imgs/icons/github.ico',
+            'gmail': 'imgs/icons/gmail.ico',
+            'google': 'imgs/icons/google.ico',
+            'hackerrank': 'imgs/icons/hackerrank.ico',
+            'instagram': 'imgs/icons/instagram.ico',
+            'mega': 'imgs/icons/mega.ico',
+            'netflix': 'imgs/icons/netflix.ico',
+            'netlify': 'imgs/icons/netlify.ico',
+            'outlook': 'imgs/icons/outlook.ico',
+            'postman': 'imgs/icons/postman.ico',
+            'soundcloud': 'imgs/icons/soundcloud.ico',
+            'spotify': 'imgs/icons/spotify.ico',
+            'steam': 'imgs/icons/steam.ico',
+            'telegram': 'imgs/icons/telegram.ico',
+            'twitch': 'imgs/icons/twitch.ico',
+            'youtube': 'imgs/icons/youtube.ico',
+            'other': 'imgs/icons/other.ico'
+        }
+
         return context
 
 
 class CredentialDetail(LoginRequiredMixin, DetailView):
     model = credential
-    # context_object_name = 'credential'
+    context_object_name = 'credential'
     
     template_name = 'base/credential.html'
     
 
-
 class CredentialCreate(LoginRequiredMixin, CreateView):
     model = credential
-    fields = ['title', 'username', 'password']
+    fields = ['title', 'username', 'password', 'type']
     success_url = reverse_lazy('credentials')
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['types'] = {
+            'adobe': 'imgs/icons/adobe.ico',
+            'amazon': 'imgs/icons/amazon.ico',
+            'bitbucket': 'imgs/icons/bitbucket.ico',
+            'discord': 'imgs/icons/discord.ico',
+            'drive': 'imgs/icons/drive.ico',
+            'dropbox': 'imgs/icons/dropbox.ico',
+            'facebook': 'imgs/icons/facebook.ico',
+            'filezilla': 'imgs/icons/filezilla.ico',
+            'gitlab': 'imgs/icons/gitlab.ico',
+            'github': 'imgs/icons/github.ico',
+            'gmail': 'imgs/icons/gmail.ico',
+            'google': 'imgs/icons/google.ico',
+            'hackerrank': 'imgs/icons/hackerrank.ico',
+            'instagram': 'imgs/icons/instagram.ico',
+            'mega': 'imgs/icons/mega.ico',
+            'netflix': 'imgs/icons/netflix.ico',
+            'netlify': 'imgs/icons/netlify.ico',
+            'outlook': 'imgs/icons/outlook.ico',
+            'postman': 'imgs/icons/postman.ico',
+            'soundcloud': 'imgs/icons/soundcloud.ico',
+            'spotify': 'imgs/icons/spotify.ico',
+            'steam': 'imgs/icons/steam.ico',
+            'telegram': 'imgs/icons/telegram.ico',
+            'twitch': 'imgs/icons/twitch.ico',
+            'youtube': 'imgs/icons/youtube.ico',
+            'other': 'imgs/icons/other.ico'
+        }
+        
+        return context
+
 
     def form_valid(self, form):
         form.instance.user = self.request.user
@@ -98,21 +161,75 @@ class CredentialCreate(LoginRequiredMixin, CreateView):
 
 class CredentialUpdate(LoginRequiredMixin, UpdateView):
     model = credential
-    password = PasswordEye(label='')
-    fields = ['title', 'username', 'password', 'last_updated']
+    # form_class = CredentialForm
+    fields = ['title', 'username', 'password', 'last_updated', 'type']
+    success_url = reverse_lazy('credentials')
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['types'] = {
+            'adobe': 'imgs/icons/adobe.ico',
+            'amazon': 'imgs/icons/amazon.ico',
+            'bitbucket': 'imgs/icons/bitbucket.ico',
+            'discord': 'imgs/icons/discord.ico',
+            'drive': 'imgs/icons/drive.ico',
+            'dropbox': 'imgs/icons/dropbox.ico',
+            'facebook': 'imgs/icons/facebook.ico',
+            'filezilla': 'imgs/icons/filezilla.ico',
+            'gitlab': 'imgs/icons/gitlab.ico',
+            'github': 'imgs/icons/github.ico',
+            'gmail': 'imgs/icons/gmail.ico',
+            'google': 'imgs/icons/google.ico',
+            'hackerrank': 'imgs/icons/hackerrank.ico',
+            'instagram': 'imgs/icons/instagram.ico',
+            'mega': 'imgs/icons/mega.ico',
+            'netflix': 'imgs/icons/netflix.ico',
+            'netlify': 'imgs/icons/netlify.ico',
+            'outlook': 'imgs/icons/outlook.ico',
+            'postman': 'imgs/icons/postman.ico',
+            'soundcloud': 'imgs/icons/soundcloud.ico',
+            'spotify': 'imgs/icons/spotify.ico',
+            'steam': 'imgs/icons/steam.ico',
+            'telegram': 'imgs/icons/telegram.ico',
+            'twitch': 'imgs/icons/twitch.ico',
+            'youtube': 'imgs/icons/youtube.ico',
+            'other': 'imgs/icons/other.ico'
+        }
+        
+        return context
 
     def get_object(self, queryset=None):
         credential = super(CredentialUpdate, self).get_object(queryset=queryset)
         
+        # Decrypt password value
         cipher_pass = Fernet(settings.ENCRYPT_KEY)
         pas = base64.urlsafe_b64decode(credential.password)
         decoded_pass = cipher_pass.decrypt(pas).decode('ascii')
         
+        # Set object value to decrypted value
         credential.password = decoded_pass
-        print(credential.password)
+
         return credential
 
-    success_url = reverse_lazy('credentials')
+    def form_valid(self, form):
+        # TODO if no change then skip logic || do not activate button
+
+        # Encrypt the password value
+        cipher_pass = Fernet(settings.ENCRYPT_KEY)
+        encrypt_pass = cipher_pass.encrypt(form.cleaned_data['password'].encode('ascii'))
+        encrypt_pass = base64.urlsafe_b64encode(encrypt_pass).decode("ascii")
+        
+        # Set form password value to encrypted value
+        form.instance.password = encrypt_pass
+
+        # Set last update to now(), since POST request is sent
+        form.instance.last_updated = timezone.now()
+
+        # Save for update object
+        self.object = form.save()
+        self.object.save()
+
+        return super().form_valid(form)
 
 
 class DeleteView(LoginRequiredMixin, DeleteView):
@@ -122,6 +239,7 @@ class DeleteView(LoginRequiredMixin, DeleteView):
     def get_queryset(self):
         owner = self.request.user
         return self.model.objects.filter(user=owner)
+
 
 class CredentialReorder(View):
     def post(self, request):

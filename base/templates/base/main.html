@@ -81,7 +81,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background-color: #1f1215;
+            background-color: #151b17;
             border-top: 1px solid #dfe4ea;
             overflow: hidden;
             flex-wrap: wrap;
@@ -93,6 +93,8 @@
             display: flex;
             padding: 20px 20px 0px 20px;
             overflow: hidden;
+            justify-content: center;
+            align-content: center;
         }
 
         .credential-title a,
@@ -103,7 +105,13 @@
         }
 
         .credential-title a {
-            color: #EB796F;
+            color: #dadada;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+        .credential-title a:hover {
+            color: #be8917;
         }
 
         .credential-title p {
@@ -114,20 +122,30 @@
             padding-left: 20px;
         }
 
+        .username-wrapper p {
+            color: #dadada;
+        }
+
         .credential-owned-icon {
             height: 20px;
             width: 20px;
             background-color: rgb(105, 192, 105);
             border-radius: 50%;
-            margin-right: 10px;
+            margin: auto;
         }
 
         .credential-inowned-icon {
             height: 20px;
             width: 20px;
-            background-color: rgb(218, 218, 218);
+            background-color: #dadada;
             border-radius: 50%;
             margin-right: 10px;
+        }
+
+        .list-type-icon {
+            height: 30px;
+            width: 30px;
+            margin-left: 10px;
         }
 
         .delete-link {
@@ -197,7 +215,7 @@
             color: #dfe4ea;
             text-decoration: none;
             font-size: 42px;
-            background-color: #EB796F;
+            background-color: #cf4949;
             border-radius: 100px;
             width: 55px;
             text-align: center;
@@ -225,13 +243,14 @@
         }
 
         input[type=text],
+        select,
         input[type=credential],
         input[type=password],
         textarea {
             border: 2px solid #757575;
             border-radius: 5px;
             padding: 10px;
-            width: 90%;
+            width: 85%;
             background-color: transparent;
             color: #dfe4ea;
         }
@@ -241,7 +260,9 @@
             padding: 0;
         }
 
-        .eye-toggle {
+        .eye-toggle,
+        .dice-toggle,
+        .copy-toggle {
             width: 60px;
             line-height: 50px;
             background-color: transparent;
@@ -251,26 +272,40 @@
             cursor: pointer;
         }
 
-        .eye-toggle:hover {
+        .eye-toggle:hover,
+        .copy-toggle:hover,
+        .dice-toggle:hover {
             background-color: black;
             transition: background-color .1s ease-out;
         }
 
-        .open,
-        .closed {
+        .dice-toggle,
+        .copy-toggle,
+        .eye-open,
+        .eye-closed {
             
             background-repeat: no-repeat;
             background-position: center;
         }
 
-        .open {
+        .eye-open {
             background-size: 40px;
-            background-image: url(../../static/imgs/eye-alt-svgrepo-com.svg);
+            background-image: url(../../static/imgs/svgs/eye-alt.svg);
         }
 
-        .closed {
+        .copy-toggle {
             background-size: 30px;
-            background-image: url(../../static/imgs/eye-slash-alt-svgrepo-com.svg);
+            background-image: url(../../static/imgs/svgs/copy-icon.svg);
+        }
+
+        .eye-closed {
+            background-size: 30px;
+            background-image: url(../../static/imgs/svgs/eye-slash.svg);
+        }
+
+        .dice-toggle {
+            background-size: 30px;
+            background-image: url(../../static/imgs/svgs/dice-icon.svg);
         }
 
         .password-wrapper {
@@ -282,8 +317,8 @@
             margin: 10px 0 5px 20px;
         }
 
-        .password-wrapper input[type=password] {
-            pointer-events: none;
+        .password-wrapper input[type=password]:focus {
+            outline: none;
         }
 
         .password-wrapper [type=password],
@@ -314,10 +349,20 @@
             text-decoration: none;
             width: 30%;
             font-weight: bold;
+            margin-left: 20px;
+        }
+
+        .button:hover {
+            background-color: #EB796F;
+            transition: background-color .1s ease-out;
+            color: #181d22;
         }
 
         .card-body {
             padding: 20px;
+            border: solid 1px #7f8a96;
+            margin-top: 40px;
+            border-radius: 10px;
         }
 
         .card-body input[type=text],
@@ -335,6 +380,237 @@
             margin-bottom: 0;
         }
 
+        .type-select-wrapper {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 10px 0 20px;
+        }
+
+        .select-title-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .select-title-wrapper h3 {
+            margin: 0;
+        }
+
+        #cred-type {
+            height: 40px;
+            background-color: transparent;
+            color: #dfe4ea;
+            margin-top: 20px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .pg-modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 10000;
+            background-color: rgba(0, 0, 0, .75);
+            padding: 40px;
+            overflow: auto;
+        }
+
+        .pg-modal.open {
+            display: block;
+        }
+
+        .pg-modal-body {
+            padding: 40px;
+            background-color: #cf4949;
+            color: #ced6e0;
+            border-radius: 10px;
+        }
+
+        .pg-modal-body h1 {
+            margin-bottom: 20px;
+        }
+
+        .pg-modal-body .password-wrapper {
+            margin-left: 0;
+        }
+
+        body.pg-modal-open {
+            /* body overflow is hidden to hide main scrollbar when modal window is open */
+            overflow: hidden;
+        }
+
+        .pg-description {
+            align-self: center;
+            color: #181d22;
+            margin: 0 0 30px 0 !important;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .pg-separator {
+            content: "";
+            display: block;
+            width: 100%;
+            border: 1px #181d22 solid;
+        }
+
+        .password-control {
+            display: flex;
+            margin: 40px 10px 40px 10px;
+        }
+
+        .password-control .pc-input {
+            background-color: #181d22;
+            color: #f1f2f6;
+            padding: 5px;
+            text-align: center;
+            justify-content: center;
+            width: 60px;
+        }
+
+        #gen_password {
+            background-color: #181d22;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            pointer-events: none;
+        }
+
+        #gen_password_length {
+            width: 20px;
+            line-height: 22px;
+            font-size: 20px;
+            padding: 10px;
+            background-color: #181d22;
+            color: #f1f2f6;
+            border-top: 2px solid #7f8a96;
+            border-bottom: 2px solid #7f8a96;
+        }
+
+        #gen_password_length:focus {
+            outline: none;
+        }
+    
+
+        .length-control {
+            display: flex;
+            height: 50px;
+        }
+
+        .length-btn {
+            padding: 10px;
+            width: 30px;
+            font-size: 20px;
+            border: none;
+            background-color: #181d22;
+            color: #f1f2f6;
+            border-top: 2px solid #7f8a96;
+            border-bottom: 2px solid #7f8a96;
+        }
+
+        #up-btn {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-right: 2px solid #7f8a96;
+        }
+
+        #down-btn {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-left: 2px solid #7f8a96;
+        }
+
+        .length-btn:hover {
+            background-color: black;
+            transition: background-color .1s ease-out;
+        }
+
+        /* Chrome, Safari, Edge, Opera */
+        .password-control input::-webkit-outer-spin-button,
+        .password-control input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        .password-control input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        .password-control input[type = checkbox] {
+            height: 80%;
+            accent-color: #181d22;
+        }
+
+        .pc-wrapper {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: flex-start;
+            margin-right: 20px;
+        }
+
+        .pc-wrapper h4 {
+            font-size: 14px;
+            padding-bottom: 3px;
+            margin-right: 10px;
+        }
+
+        .icon-length,
+        .control-label {
+            height: 30px;
+            padding-bottom: 3px;
+            text-align: center;
+            font-weight: bold;
+            color: #181d22;
+        }
+
+        .control-label {
+            margin-top: 10px;
+        }
+
+        .icon-length {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 40px;
+            background-image: url(../../static/imgs/svgs/ruler-icon.svg);
+        }
+
+        .modal-control {
+            display: flex;
+            justify-content: center;
+        }
+
+        .modal-control button {
+            height: 40px;
+            padding: 10px;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        .modal-control button:hover {
+            cursor: pointer;
+            transition: background-color .1s ease-out;
+        }
+
+        .action-btn:hover,
+        .secondary-btn:hover {
+            background-color: black;
+            color: #dfe4ea;
+        }
+
+        .secondary-btn {
+            background-color: transparent;
+            color: black;
+            border: 2px solid #181d22;
+        }
+
+        .action-btn {
+            background-color: #181d22;
+            color: #dfe4ea;
+            border: none;
+        }
         
     </style>
 </head>
