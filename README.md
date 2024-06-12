@@ -101,7 +101,7 @@ _The below might vary depending on the specific OS you are using. Please note th
    ```
 3. Set your environment variables
 
-Evrything is quite simple until this point. Depending on your lazyness (and trust), there is a scripted way and a manual way to proceed from this point on. Please follow the steps for the way you prefer.
+All steps are quite simple until this point. Depending on your lazyness (and trust), there is a scripted way and a manual way to proceed from this point on. Please follow the steps for the way you prefer.
 
 <details> 
  <summary><h2>Scripted way</h2></summary>
@@ -140,7 +140,7 @@ Evrything is quite simple until this point. Depending on your lazyness (and trus
    ```
 </details>
 
-[!IMPORTANT]  
+> [!IMPORTANT]  
 > When the application will no longer be in use (`Ctrl/Cmd + C`), always remember to deactivate the virtual environment:
 >   ```sh
 >    deactivate
