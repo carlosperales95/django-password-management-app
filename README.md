@@ -1,4 +1,3 @@
-# django-password-manager-w-authentication
 <a name="readme-top"></a>
 
 <!-- PROJECT LOGO -->
