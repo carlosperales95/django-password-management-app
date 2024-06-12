@@ -140,8 +140,11 @@ Evrything is quite simple until this point. Depending on your lazyness (and trus
    ```
 </details>
 
-deactivate
-
+[!IMPORTANT]  
+> When the application will no longer be in use (`Ctrl/Cmd + C`), always remember to deactivate the virtual environment:
+>   ```sh
+>    deactivate
+>   ```
 
 Now the server should be up and running, and visible at ![localhost](http://127.0.0.1:8000) !
 
