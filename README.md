@@ -1,12 +1,4 @@
 # Django-password-manager-with-authentication
-
-### git clone https://github.com/carlosperales95/django-password-management-app.git  # Cloning project repository
-### cd django-password-manager-app/ # Enter to project directory
-python3 -m venv pass_manage_venv
-source pass_manage_venv/bin/activate
-pip3 install -r ./requirements.txt
-deactivate
-
 <a name="readme-top"></a>
 
 <!-- PROJECT LOGO -->
@@ -129,6 +121,26 @@ Evrything is quite simple until this point. Depending on your lazyness (and trus
    ./start.sh
    ```
 </details>
+
+
+<details> 
+ <summary><h2>Manual way</h2></summary>
+ 
+1. Create virtual environment and `pip` install requirements
+   ```sh
+    python3 -m venv pass_manage_venv
+    source pass_manage_venv/bin/activate
+    pip3 install -r ./requirements.txt
+   ```
+2. Run migrations and start application
+   ```sh
+    python manage.py makemigrations
+    python manage.py migrate
+    python manage.py runserver
+   ```
+</details>
+
+deactivate
 
 
 Now the server should be up and running, and visible at ![localhost](http://127.0.0.1:8000) !
