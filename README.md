@@ -161,7 +161,7 @@ Make sure that the following requirements are satified before starting with the 
    ```
 </details>
 
-Now the server should be up and running, and visible at ![localhost](http://127.0.0.1:8000) !
+Now the server should be up and running, and visible at [localhost](http://127.0.0.1:8000) !
 <br />
 
 > [!IMPORTANT]  
