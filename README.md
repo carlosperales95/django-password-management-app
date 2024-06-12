@@ -117,7 +117,7 @@ Make sure that the following requirements are satified before starting with the 
   SECRET_KEY = <YOUR_SECRET_KEY_VALUE>
   ENCRYPT_KEY = <YOUR_SECRET_KEY_VALUE>
   ```
-  > [!CAUTION]  
+  > [!WARNING]  
   > If you ever fork or reupload this project, please never upload these keys to a public repository.
   > People otherwise will know your keys!
 
