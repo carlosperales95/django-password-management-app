@@ -1,4 +1,4 @@
-# Django-password-manager-with-authentication
+# django-password-manager-w-authentication
 <a name="readme-top"></a>
 
 <!-- PROJECT LOGO -->
@@ -11,9 +11,9 @@
   <p align="center">
     An awesome simple Python + Django project that makes your life more secure!
     <br />
-    <br />
+<!--     <br />
     <a href="">View Demo</a>
-    ·
+    · -->
     <a href="https://github.com/carlosperales95/django-password-management-app/issues">Report Bug</a>
     ·
     <a href="https://github.com/carlosperales95/django-password-management-app/issues/">Request Feature</a>
@@ -182,16 +182,13 @@ Now the server should be up and running, and visible at ![localhost](http://127.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br />
 
+
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
+![image](https://github.com/carlosperales95/django-password-management-app/assets/8956411/7797f63a-2603-4bca-bb42-a5fa31cf86c5)
 ![](https://github.com/carlosperales95/django-password-management-app/assets/8956411/e65d5673-0d24-470e-b062-82fcb0650481)
+![image](https://github.com/carlosperales95/django-password-management-app/assets/8956411/2a2d8ee6-57b8-4a91-aa04-74cd5213df2f)
 ![image](https://github.com/carlosperales95/django-password-management-app/assets/8956411/2280b08e-82b1-49f4-9219-ad1590e967c8)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
