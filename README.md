@@ -9,7 +9,7 @@
   </a>
   <h3 align="center">Django Password Manager</h3>
   <p align="center">
-    An awesome simple Python + Django project that makes your life more secure!
+    An awesome simple Python + Django project that makes your life more secure
     <br />
 <!--     <br />
     <a href="">View Demo</a>
