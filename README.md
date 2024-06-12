@@ -110,8 +110,8 @@ Make sure that the following requirements are satified before starting with the 
    Copy the `.env.example` file as `.env` in the same folder (main project folder)
 
 4. Set the values for `SECRET_KEY` and `ENCRYPT_KEY`.
-   `SECRET_KEY` is your personal Django key, which you can generate using your console (if you are tech savvy), or simply in a site like [Djecrety](Djcrety-url) [Fernet Key Generator](Fernet-keygen-url)
-   `ENCRYPT_KEY` is your personal Fernet encryption key, which you can generate using your console (if you are tech savvy), or simply in a site like [Djecrety](Djcrety-url)
+   `SECRET_KEY` is your personal Django key, which you can generate using your console (if you are tech savvy), or simply in a site like [Djecrety](Djcrety-url)
+   `ENCRYPT_KEY` is your personal Fernet encryption key, which you can generate using your console (if you are tech savvy), or simply in a site like [Fernet Key Generator](Fernet-keygen-url)
   ```
   SECRET_KEY = <YOUR_SECRET_KEY_VALUE>
   ENCRYPT_KEY = <YOUR_SECRET_KEY_VALUE>
