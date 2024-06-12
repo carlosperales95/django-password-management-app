@@ -52,7 +52,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![App Screen Shot][product-screenshot]](https://github.com/carlosperales95/django-password-management-app/assets/8956411/e65d5673-0d24-470e-b062-82fcb0650481)
+
 
 PROJECT DESCRIPTION
 
@@ -61,8 +62,6 @@ PROJECT DESCRIPTION
 
 
 ### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 [![Python][Python]][Python-url]
 [![Django][Django]][Django-url]
