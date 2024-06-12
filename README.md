@@ -86,7 +86,9 @@ Make sure that the following requirements are satified before starting with the 
 
 ### Installation
 
-_The below might vary depending on the specific OS you are using. Please note that the pre-existing scripts are only valid for Unix based OS (e.g. Linux, Mac)_
+> [!CAUTION]  
+> _The below might vary depending on the specific OS you are using. Please note that the pre-existing scripts are only valid for Unix based OS (e.g. Linux, Mac)_
+
 
 1. Clone the repo
    ```sh
@@ -98,7 +100,7 @@ _The below might vary depending on the specific OS you are using. Please note th
    ```
 3. Set your environment variables
 
-> [!CAUTION]  
+> [!TIP]  
 > All steps are quite simple until this point. Depending on your lazyness (and trust), there is a scripted way and a manual way to proceed from this point on.
 > Please follow the steps for the way you prefer.
 
