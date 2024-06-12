@@ -91,29 +91,42 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Make sure that the following requirements are satified before starting with the setup process
+* python3
+* pip
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+_The below might vary depending on the specific OS you are using. Please note that the pre-existing scripts are only valid for Unix based OS (e.g. Linux, Mac)_
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/carlosperales95/django-password-management-app.git
    ```
-3. Install NPM packages
+2. Move into the project folder
    ```sh
-   npm install
+   cd django-password-management-app/
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. Set your environment variables
+
+Evrything is quite simple until this point. Depending on your lazyness (and trust), there is a scripted way and a manual way to proceed from this point on. Please follow the steps for the way you prefer.
+
+#### Scripted
+1. Give permissions to the script files
+   ```sh
+   chmod +x setup.sh
+   chmod +x start.sh
    ```
+2. Run `setup.sh`. This creates the virtual environment and installs all requirements
+   ```sh
+   ./setup.sh
+   ```
+   
+4. Run `start.sh`. This migrates the database and starts the application
+   ```sh
+   ./start.sh
+   ```
+Now the server should be up and running, and visible at ![localhost](http://127.0.0.1:8000) !
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
