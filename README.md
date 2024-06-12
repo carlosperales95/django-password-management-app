@@ -99,7 +99,7 @@ Make sure that the following requirements are satified before starting with the 
 > Please note that the pre-existing scripts are only valid for Unix based OS (e.g. Linux, Mac)_
 
 1. Clone the repo
-   ```sh
+   ```bash
    git clone https://github.com/carlosperales95/django-password-management-app.git
    ```
 2. Move into the project folder
