@@ -97,8 +97,8 @@ To get a local copy up and running follow these steps.
 Make sure that the following requirements are satified before starting with the setup process:
 * python3
 * pip
-
 <br />
+
 ### Installation
 
 > [!CAUTION]  
@@ -180,9 +180,8 @@ Make sure that the following requirements are satified before starting with the 
 Now the server should be up and running, and visible at ![localhost](http://127.0.0.1:8000) !
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 <br />
+
 <!-- USAGE EXAMPLES -->
 ## Usage
 
