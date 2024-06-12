@@ -52,9 +52,26 @@
 ## About The Project
 ![photo-collage png](https://github.com/carlosperales95/django-password-management-app/assets/8956411/e7302035-9ec7-4332-85b2-753c8e03584a)
 
+This Password Manager is a secure and efficient application built using Python and Django. Designed for individuals who prefer to avoid cloud-based services due to security concerns, this app offers robust password management functionality, entirely on your local machine. By running the application locally, users can eliminate the risks associated with cloud service breaches, ensuring their sensitive information remains private and secure.
 
-PROJECT DESCRIPTION
+<br />
 
+### Key Features:
+  * **Local Hosting:** The application runs on your local machine, negating the need for cloud storage and minimizing exposure to potential online threats.
+  * **User Authentication:** Access to the app is protected by a user login system, ensuring only you can view and manage your passwords.
+  * **Password Encryption:** All stored passwords are securely encrypted, providing an additional layer of security.
+  * **Password dice:** The app includes a feature to generate strong, random passwords instantly.
+  * **User-Friendly Interface:** Designed with simplicity in mind, the app offers an intuitive interface for easy password management.
+
+<br />
+
+### Benefits:
+  * **One Password:** You will only only need to remember a single master password to access the app, reducing the need to be remembering multiple passwords.
+  * **No more duplicates:** Thanks to the password dice, you no longer need to come up with your own passwords. Our app allows you to set your own password if you wish so, but thanks to the password dice, you can generate unique and secure passwords instantly. This avoids password duplicates, and ensures you always use strong and secure passwords without the hassle of creating them.
+  * **Enhanced Security:** By keeping passwords stored locally and encrypted, users are protected from potential breaches common in cloud-based services.
+  * **Control and Privacy:** You have full control over your password data, with no dependency on third-party services.
+  * **Convenience:** Simplifies the process of generating and storing complex passwords, making it easier to maintain strong security practices.
+    
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -72,12 +89,12 @@ PROJECT DESCRIPTION
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Below you can find the instructions on setting up this project locally.
+To get a local copy up and running follow these steps.
 
 ### Prerequisites
 
-Make sure that the following requirements are satified before starting with the setup process
+Make sure that the following requirements are satified before starting with the setup process:
 * python3
 * pip
 
@@ -88,7 +105,6 @@ Make sure that the following requirements are satified before starting with the 
 > _The below might vary depending on the specific OS you are using.
 > Please note that the pre-existing scripts are only valid for Unix based OS (e.g. Linux, Mac)_
 
-
 1. Clone the repo
    ```sh
    git clone https://github.com/carlosperales95/django-password-management-app.git
@@ -97,7 +113,22 @@ Make sure that the following requirements are satified before starting with the 
    ```sh
    cd django-password-management-app/
    ```
-3. Set your environment variables
+3. Set your environment variables:
+   Copy the `.env.example` file as `.env` in the same folder (main project folder)
+
+4. Set the values for `SECRET_KEY` and `ENCRYPT_KEY`.
+   `SECRET_KEY` is your personal Django key, which you can generate using your console (if you are tech savvy), or simply in a site like [Djecrety](Djcrety-url) [Fernet Key Generator](Fernet-keygen-url)
+   `ENCRYPT_KEY` is your personal Fernet encryption key, which you can generate using your console (if you are tech savvy), or simply in a site like [Djecrety](Djcrety-url)
+  ```
+  SECRET_KEY = <YOUR_SECRET_KEY_VALUE>
+  ENCRYPT_KEY = <YOUR_SECRET_KEY_VALUE>
+  ```
+  > [!CAUTION]  
+  > If you ever fork or reupload this project, please never upload these keys to a public repository.
+  > People otherwise will know your keys!
+
+
+<br />
 
 > [!TIP]  
 > All steps are quite simple until this point. Depending on your lazyness (and trust), there is a scripted way and a manual way to proceed from this point on.
@@ -193,3 +224,5 @@ Don't forget to give the project a star! Thanks again!
 [Python-url]: https://www.python.org/
 [Django-url]: https://www.djangoproject.com/
 [SQLite-url]: https://sqlite.org/
+[Djecrety-url]: https://djecrety.ir/
+[Fernet-keygen-url]: https://fernetkeygen.com/
