@@ -185,9 +185,17 @@ py manage.py createsuperuser
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-![image](https://github.com/carlosperales95/sekurata-django/assets/8956411/7797f63a-2603-4bca-bb42-a5fa31cf86c5)
+
+### Register/Login
+![image](https://github.com/carlosperales95/sekurata-django/assets/8956411/5cf9776a-e0fb-4fa9-b1a9-d8a385deda5c)
+
+### Manage your credentials
 ![](https://github.com/carlosperales95/sekurata-django/assets/8956411/e65d5673-0d24-470e-b062-82fcb0650481)
+
+### Add new or edit existing credentials
 ![image](https://github.com/carlosperales95/sekurata-django/assets/8956411/2a2d8ee6-57b8-4a91-aa04-74cd5213df2f)
+
+### Generate safe random passwords
 ![image](https://github.com/carlosperales95/sekurata-django/assets/8956411/2280b08e-82b1-49f4-9219-ad1590e967c8)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
