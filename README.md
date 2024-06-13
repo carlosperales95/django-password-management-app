@@ -6,7 +6,9 @@
   <a href="https://github.com/carlosperales95/django-password-management-app">
     <img src="https://github.com/carlosperales95/django-password-management-app/assets/8956411/beacef62-e52d-49bc-9dd9-6260aefa82ef" alt="Logo" width="80" height="80">
   </a>
-  <h3 align="center">Django Password Manager</h3>
+  <h3 align="center">
+    Sekurata
+  </h3>
   <p align="center">
     An awesome simple Python + Django project that makes your life more secure
     <br />
