@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/carlosperales95/sekurata-django">
-    <img src="https://github.com/carlosperales95/sekurata-django/assets/8956411/beacef62-e52d-49bc-9dd9-6260aefa82ef" alt="Logo" width="80" height="80">
+    <img src="https://github.com/carlosperales95/sekurata-django/assets/8956411/c92b6da5-c24a-4815-bd0b-74171af02fea" alt="Logo" width="80" height="80">
   </a>
   <h3 align="center">
     Sekurata
