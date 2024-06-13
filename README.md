@@ -6,7 +6,7 @@
   <a href="https://github.com/carlosperales95/sekurata-django">
     <img src="https://github.com/carlosperales95/sekurata-django/assets/8956411/f1dbbfab-b07f-4f86-8f4a-920ff0ec1697" alt="Logo" width="80" height="80">
   </a>
-  <img src="https://github.com/carlosperales95/sekurata-django/assets/8956411/d5e0606d-7b0f-49f3-bfb8-e42e541903ed" alt="appName" width="100" height="auto">
+  <img src="https://github.com/carlosperales95/sekurata-django/assets/8956411/d5e0606d-7b0f-49f3-bfb8-e42e541903ed" alt="appName" width="1000" height="auto">
   <p align="center">
     An awesome simple Python + Django project that makes your life more secure
     <br />
