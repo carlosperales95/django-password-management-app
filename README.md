@@ -3,8 +3,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/carlosperales95/django-password-management-app">
-    <img src="https://github.com/carlosperales95/django-password-management-app/assets/8956411/beacef62-e52d-49bc-9dd9-6260aefa82ef" alt="Logo" width="80" height="80">
+  <a href="https://github.com/carlosperales95/sekurata-django">
+    <img src="https://github.com/carlosperales95/sekurata-django/assets/8956411/beacef62-e52d-49bc-9dd9-6260aefa82ef" alt="Logo" width="80" height="80">
   </a>
   <h3 align="center">
     Sekurata
@@ -15,9 +15,9 @@
 <!--     <br />
     <a href="">View Demo</a>
     · -->
-    <a href="https://github.com/carlosperales95/django-password-management-app/issues">Report Bug</a>
+    <a href="https://github.com/carlosperales95/sekurata-django/issues">Report Bug</a>
     ·
-    <a href="https://github.com/carlosperales95/django-password-management-app/issues/">Request Feature</a>
+    <a href="https://github.com/carlosperales95/sekurata-django/issues/">Request Feature</a>
   </p>
 </div>
 
@@ -55,7 +55,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-![photo-collage png](https://github.com/carlosperales95/django-password-management-app/assets/8956411/e7302035-9ec7-4332-85b2-753c8e03584a)
+![photo-collage png](https://github.com/carlosperales95/sekurata-django/assets/8956411/e7302035-9ec7-4332-85b2-753c8e03584a)
 
 This Password Manager is a secure and efficient application built using Python and Django. Designed for individuals who prefer to avoid cloud-based services due to security concerns, this app offers robust password management functionality, entirely on your local machine. By running the application locally, users can eliminate the risks associated with cloud service breaches, ensuring their sensitive information remains private and secure.
 
@@ -102,11 +102,11 @@ Make sure that the following requirements are satified before starting with the 
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/carlosperales95/django-password-management-app.git
+   git clone https://github.com/carlosperales95/sekurata-django
    ```
 2. Move into the project folder
    ```sh
-   cd django-password-management-app/
+   cd sekurata-django
    ```
 3. Copy the `.env.example` file as `.env` in the same folder (main project folder)
 
@@ -178,10 +178,10 @@ Now the server should be up and running, and visible at [localhost](http://127.0
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-![image](https://github.com/carlosperales95/django-password-management-app/assets/8956411/7797f63a-2603-4bca-bb42-a5fa31cf86c5)
-![](https://github.com/carlosperales95/django-password-management-app/assets/8956411/e65d5673-0d24-470e-b062-82fcb0650481)
-![image](https://github.com/carlosperales95/django-password-management-app/assets/8956411/2a2d8ee6-57b8-4a91-aa04-74cd5213df2f)
-![image](https://github.com/carlosperales95/django-password-management-app/assets/8956411/2280b08e-82b1-49f4-9219-ad1590e967c8)
+![image](https://github.com/carlosperales95/sekurata-django/assets/8956411/7797f63a-2603-4bca-bb42-a5fa31cf86c5)
+![](https://github.com/carlosperales95/sekurata-django/assets/8956411/e65d5673-0d24-470e-b062-82fcb0650481)
+![image](https://github.com/carlosperales95/sekurata-django/assets/8956411/2a2d8ee6-57b8-4a91-aa04-74cd5213df2f)
+![image](https://github.com/carlosperales95/sekurata-django/assets/8956411/2280b08e-82b1-49f4-9219-ad1590e967c8)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
