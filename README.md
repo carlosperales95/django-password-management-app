@@ -118,6 +118,7 @@ Make sure that the following requirements are satified before starting with the 
   > [!WARNING]  
   > If you ever fork or reupload this project, please never upload these keys to a public repository.
   > People otherwise will know your keys!
+  > Also avoid uploading other sensitive stuff like your sqlite3 DB file  
 
 
 <br />
@@ -165,6 +166,14 @@ Make sure that the following requirements are satified before starting with the 
 
 Now the server should be up and running, and visible at [localhost](http://127.0.0.1:8000) !
 <br />
+
+### Create Django Admin User
+Django admin gives you access to the admin panel in `localhost/admin`, really useful if you want to have more visibility. In order to create an admin user, the Django command would be as follows:
+```sh
+py manage.py createsuperuser
+```
+<br />
+
 
 > [!IMPORTANT]  
 > When the application will no longer be in use (`Ctrl/Cmd + C`), always remember to deactivate the virtual environment:
