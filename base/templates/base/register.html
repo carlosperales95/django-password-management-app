@@ -1,21 +1,28 @@
 {% extends 'base/main.html' %}
 {% block content %}
 
+{% load static %}
 <div class="header-bar">
-    <h1>Register</h1>
+    <div class="header-text-wrapper">
+        <div class="app-title"></div>
+        <h1>Register</h1>
+    </div>
+    <img src="{% static 'imgs/bouncer.png' %}">
 </div>
 
 <div class="card-body">
     <form method="POST">
         {% csrf_token %}
-        <label>{{form.username.label}}</label>
-        {{form.username}}
+        <div class="login-fields-wrapper">
+            <label>{{form.username.label}}</label>
+            {{form.username}}
 
-        <label>{{form.password1.label}}</label>
-        {{form.password1}}
+            <label>{{form.password1.label}}</label>
+            {{form.password1}}
 
-        <label>{{form.password2.label}}</label>
-        {{form.password2}}
+            <label>{{form.password2.label}}</label>
+            {{form.password2}}
+        </div>
         <input style="margin-top:10px ;" class="button" type="submit" value="Register">
     </form>
     <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>

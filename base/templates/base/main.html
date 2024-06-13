@@ -14,11 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
 
     <style>
-        #favicon {
-            width: 20px;
-            background-color: white;
-        }
-        
         body {
             background-color: #181d22;
             font-family: 'Nunito', sans-serif;
@@ -45,7 +40,7 @@
         }
 
         .container {
-            max-width: 60%;
+            max-width: 800px;
             min-width: 400px;
             margin: auto;
         }
@@ -53,12 +48,14 @@
         .logout-button {
             color: rgb(247, 247, 247);
             text-decoration: none;
-            font-size: 18px;
+            font-size: 20px;
             padding: 5px;
             padding-top: 0;
             background-color: transparent;
             cursor: pointer;
             border: none;
+            font-weight: bold;
+            text-align: right;
         }
 
         input {
@@ -70,9 +67,10 @@
             display: flex;
             justify-content: space-between;
             color: #fff;
-            padding: 20px 20px 50px 20px;
+            padding: 20px 20px 20px 20px;
             border-radius: 5px;
             background-color: #cf4949;
+            height: 200px;
         }
 
         .header-bar a {
@@ -80,6 +78,29 @@
             text-decoration: none;
             font-size: 20px;
             font-weight: bold;
+        }
+
+        .header-text-wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .header-text-wrapper h1 {
+            margin-left: 85px;
+        }
+
+        .app-title {
+            width: 400px;
+            height: 400px;
+            background-size: 400px;
+            background-image: url(../../static/imgs/svgs/app_name.svg);
+            background-repeat: no-repeat;
+            background-position: left top;
+        }
+
+        .login-fields-wrapper #id_username {
+            margin-left: 0;
         }
 
         .credential-wrapper {
@@ -247,11 +268,14 @@
             }
         }
 
-        input[type=text],
-        select,
-        input[type=credential],
-        input[type=password],
-        textarea {
+        form label {
+            color: #dfe4ea;
+        }
+        form input[type=text],
+        form select,
+        form input[type=credential],
+        form input[type=password],
+        form textarea {
             border: 2px solid #757575;
             border-radius: 5px;
             padding: 10px;
@@ -489,6 +513,7 @@
             border-top-right-radius: 0px;
             border-bottom-right-radius: 0px;
             pointer-events: none;
+            color: #dfe4ea;
         }
 
         #gen_password_length {
